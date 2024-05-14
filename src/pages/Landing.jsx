@@ -49,7 +49,7 @@ const MyComponent = () => {
     // Add user's message to conversation history
     const updatedHistory = [
       ...conversationHistory,
-      { role: "user", content: message },
+      { role: "user", content: `make a joke about ${message}` },
     ];
     setConversationHistory(updatedHistory);
 
